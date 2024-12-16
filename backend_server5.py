@@ -277,6 +277,6 @@ def data_process():
 
 if __name__ == '__main__':
     socketio.start_background_task(target=check_alarm)  # 시간 체크를 백그라운드에서 실행
-    socketio.run(app, debug=True, port=5000)  # Flask와 SocketIO를 함께 실행
+    socketio.run(app, host='0.0.0.0', debug=True, port=5000)  # Flask와 SocketIO를 함께 실행
 
 
